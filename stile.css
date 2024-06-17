@@ -19,8 +19,7 @@ html {
 
 @font-face {
   font-family: 'PP Editorial Old';
-  src: local('PP Editorial Old Ultralight Italic'), local('PPEditorialOld-UltralightItalic'),
-    url('PPEditorialOld-UltralightItalic.woff2') format('woff2'),
+  src: url('PPEditorialOld-UltralightItalic.woff2') format('woff2'),
     url('PPEditorialOld-UltralightItalic.woff') format('woff');
   font-weight: 200;
   font-style: italic;
