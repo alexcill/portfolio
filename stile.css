@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --main-font-family: 'PP Editorial Old';
+  --second-font-family: 'PP Pangram Sans';
+  --main-color: rgb(16, 14, 14);
+  --gap-column: 10px;
+}
+
+html {
+  font-family: var(--second-font-family);
+  background-color: var(--main-color);
+
+  color: white;
+}
+
+@font-face {
+  font-family: 'PP Editorial Old';
+  src: local('PP Editorial Old Ultralight Italic'), local('PPEditorialOld-UltralightItalic'),
+    url('PPEditorialOld-UltralightItalic.woff2') format('woff2'),
+    url('PPEditorialOld-UltralightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Pangram Sans';
+  src: url('PPPangramSans-Medium.woff2') format('woff2'),
+    url('PPPangramSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: var(--main-font-family);
+
+  font-size: 4em;
+  color: white;
+
+  font-weight: 500;
+
+  text-align: left;
+
+  /* padding: 3em .2em; */
+}
+
+.top-bar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: auto;
+}
+
+.logo {
+  padding: 1em;
+}
+
+.nav-item {
+  color: white;
+
+  padding: 1em;
+  text-decoration: none;
+
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: cyan;
+}
+
+/* header w/ some info */
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  text-transform: uppercase;
+
+  margin: 200px 10px 10px 10px;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: cyan;
+}
+
+
+/* da qui scroll del main -> parallax effect */
+
+.lavoro {
+  /* Full height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.uno {
+  background-image: url('img/mockuptesi.png');
+
+}
+
+.due {
+  background-image: url('img/unmelt.png');
+}
+
+.tre {
+  background-image: url('img/flexform02.png');
+}
+
+.quattro {
+  background-image: url('img/specimen.png');
+}
+
+.cinque {
+  background-image: url('img/volto.png');
+}
+
+.sei {
+  background-image: url('img/rayban/poster.png');
+}
+
+.text-work {
+  position: absolute;
+
+  height: 100vh;
+  width: 100%;
+
+  padding: 1em;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: var(--gap-column);
+
+  align-items: flex-start;
+  flex-direction: column;
+
+  justify-content: end;
+  align-items: center;
+
+  text-align: center;
+}
+
+.cta {
+  font-family: var(--second-font-family);
+
+  font-size: 1em;
+  color: var(--main-color);
+
+  text-decoration: underline;
+
+  text-transform: uppercase;
+
+  text-shadow: none;
+
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+.text-work a:hover {
+  color: cyan;
+}
+
+h2 {
+  font-family: var(--main-font-family);
+
+  font-size: 2em;
+
+  font-weight: 900;
+
+  color: var(--main-color);
+
+  grid-row: 1/2;
+  grid-column: 2/3;
+
+  line-height: 36px;
+}
+
+.p-work {
+  color: var(--main-color);
+
+  font-size: 1em;
+
+  text-transform: uppercase;
+
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column-reverse; */
+
+
+  padding: 1em .2em;
+}
+
+footer p {
+  font-family: var(--main-font-family);
+
+  font-size: 1em;
+}
+
+footer a {
+  color: white;
+
+  padding: .5em;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+}
+
+footer a:hover {
+  color: cyan;
+}
+
+/* Media query home */
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: var(--gap-column);
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+}
+
+/* CONTACT PAGE */
+
+.contact-img {
+  background-image: url(img/businesscard.png);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  height: 100vh;
+
+  background-color: var(--main-color);
+
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.card a {
+  color: white;
+}
+
+.card a:hover {
+  color: cyan;
+}
+
+.card p {
+  margin: 10px;
+}
+
+/* Media query contact */
+@media (max-width: 800px) {
+  .card {
+    font-size: 2em;
+  }
+
+  .contact-img {
+    background-position: left;
+  }
+}
+
+/* INIZIANO CLASSI LAVORI */
+/* Primo lavoro Daemap */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.text-intro {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: var(--gap-column);
+
+  margin: 20px 0px;
+}
+
+.p-uno {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.p-due {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.grid-work {
+  display: flex;
+
+  gap: var(--gap-column);
+}
+
+.img-lavori {
+  min-width: 50%;
+  height: auto;
+
+  margin: 10px 0;
+}
+
+.grid-work-due {
+  min-width: 100%;
+
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  gap: var(--gap-column);
+}
+
+.img-lavori-due {
+  width: 100%;
+
+  margin: 10px 0;
+}
+
+.next-work {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 3em;
+
+  color: white;
+  text-transform: uppercase;
+}
+
+.next-work:hover {
+  color: cyan;
+}
+
+
+
+/* Media query works */
+@media (max-width: 800px) {
+
+  .container {
+    margin: auto 10px;
+  }
+
+  .grid-work {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .img-lavori {
+    min-width: 100%;
+    height: auto;
+  }
+
+  .grid-work-due {
+    min-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
