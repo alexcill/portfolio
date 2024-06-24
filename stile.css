@@ -110,8 +110,6 @@ header a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  box-shadow: 2px black;
 }
 
 .uno {
@@ -293,7 +291,7 @@ footer a:hover {
 /* Media query contact */
 @media (max-width: 800px) {
   .card {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .contact-img {
