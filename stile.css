@@ -251,6 +251,42 @@ footer a:hover {
     font-size: 20px;
   }
 
+  .lavoro {
+    /* Full height */
+    height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .uno {
+    background-image: url('img/mobile/mockuptesi.png');
+  
+  }
+  
+  .due {
+    background-image: url('img/mobile/unmelt.png');
+  }
+  
+  .tre {
+    background-image: url('img/mobile/flexform02.pngx');
+  }
+  
+  .quattro {
+    background-image: url('img/mobile/specimen.png');
+  }
+  
+  .cinque {
+    background-image: url('img/mobile/volto.png');
+  }
+  
+  .sei {
+    background-image: url('img/mobile/rayban.png');
+  }
+
   footer {
     flex-direction: column-reverse;
   }
